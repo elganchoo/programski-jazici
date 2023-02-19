@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Контакт</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+  <img id="logo" width="200px" src="./img/Wikipedia-logo-v2.svg.png">
+  <ul>
+    <li><h1 style="color: white">Добредојдовте на страницата за програмски јазици</h1></li>
+    <li><a href="index.html">Почетна</a></li>
+    <li>
+      <a href="#">Јазици ⬇️</a>
+      <ul class="dropdown">
+        <li><a href="cpp.html">C++</a></li>
+        <li><a href="java.html">Java</a></li>
+        <li><a href="python.html">Python</a></li>
+      </ul>
+    </li>
+    <li><a href="kontakt.html">Контактирај нè</a></li>
+    <li><a href="zanas.html">За нас</a></li>
+  </ul>
+</header>
+<div id="glavenDel">
+  <div id="levo">
+    <h4>Научи C++</h4>
+    <a href="https://www.codecademy.com/learn/learn-c-plus-plus">Странска литература</a>
+    <h4>Научи Java</h4>
+    <a href="https://www.codecademy.com/learn/learn-java">Странска литература</a>
+    <h4>Научи Python</h4>
+    <a href="https://www.learnpython.org/">Странска литература</a>
+  </div>
+  <div id="desno2">
+    <label>Име: <input style="font-size: 20px" type="text"></label>
+    <label>Презиме: <input style="font-size: 20px"  type="text"></label><br>
+    <label>Е-маил: <input style="font-size: 20px" type="text"></label>
+    <label>Телефонски број: <input style="font-size: 20px"  type="text"></label><br>
+    <label>Порака: <br><br><textarea style="width: 80%; height: 200px; font-size: 25px"></textarea><br></label>
+    <button onclick="f()">Прати</button>
+  </div>
+</div>
+<footer>
+  <ul>
+    <lI><a href="index.html">Почетна</a></lI>
+    <lI><a href="cpp.html">C++</a></lI>
+    <lI><a href="java.html">Java</a></lI>
+    <lI><a href="python.html">Python</a></lI>
+    <lI><a href="kontakt.html">Контактирај нè</a></lI>
+    <lI><a href="zanas.html">За нас</a></lI>
+  </ul>
+</footer>
+<script>
+  function f(){
+    var lista = document.getElementsByTagName("input").valueOf();
+    for(let i =0; i<4; i++)
+      lista[i].value="";
+    document.getElementsByTagName("textarea")[0].value=" ";
+    window.alert("Пораката е пратена!");
+  }
+</script>
+</body>
+</html>
