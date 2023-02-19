@@ -2,6 +2,9 @@
  margin: 0;
   padding: 0;
 }
+html{
+ zoom:90%;
+}
 body {
   background: url('../img/wallhaven-837v31.png') no-repeat;
   min-height: 100vh;
