@@ -3,21 +3,23 @@
   padding: 0;
 }
 html{
- zoom:90%;
+  zoom: 80%;
 }
 body {
   background: url('../img/wallhaven-837v31.png') no-repeat;
+  background-size: 100%;
   min-height: 100vh;
 }
 
 header ul {
   list-style: none;
   background: #22438C;
+  text-align: right;
 }
 header ul li{
   display:inline-block;
   position:relative;
-  left: 350px;
+
 }
 header ul li a{
   display:block;
@@ -56,7 +58,7 @@ footer{
   top:100%;
   width: 100%;
   height: 100px;
-  background-color: #22438C;;
+  background-color: #22438C;
 
 
 }
@@ -116,7 +118,7 @@ h2 {
   transition: transform 0.5s;
 }
 #desno img:hover{
-  transform: scale(1.05)
+  transform: scale(1.02)
 }
 #desno p{
   padding: 0px 20px;
